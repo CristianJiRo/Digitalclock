@@ -1,0 +1,185 @@
+﻿<Window x:Class="Digitalclock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Digitalclock"
+        mc:Ignorable="d"
+        Title="Rellotge Digital" Height="350" Width="525" ResizeMode="NoResize">
+    <Grid>
+
+
+        <Label x:Name="clock" Content="" HorizontalContentAlignment="Center" VerticalAlignment="Center" FontSize="92" Margin="44,69,41,118.8"/>
+        <Menu x:Name="menu" Height="22" VerticalAlignment="Top" Width="517" Margin="0,-2,0,0" HorizontalAlignment="Left">
+            <MenuItem x:Name="fitxer" Header="Fitxer">
+                <MenuItem x:Name="sortir" Header="Sortir" Click="sortir_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="ajuda" Header="Ajuda">
+                <MenuItem x:Name="sobre" Header="Sobre aquest programa" Click="sobre_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="alarmAct" Header="Alarma" IsCheckable="True" IsChecked="True"/>
+            <MenuItem x:Name="mn_Pais" Header="Pais">
+                <MenuItem x:Name="add" Header="Añadir Pais" Margin="0,0,-9,0" Click="add_Click"/>
+                <MenuItem x:Name="delete" Header="Borrar Pais" HorizontalAlignment="Left" Width="147" Click="delete_Click"/>
+            </MenuItem>
+        </Menu>
+        <ComboBox x:Name="Segundos" Margin="461,0,0,14.8" Grid.RowSpan="3" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="40">
+            <ComboBoxItem x:Name="s00" Content="00"/>
+            <ComboBoxItem x:Name="s01" Content="01"/>
+            <ComboBoxItem x:Name="s02" Content="02"/>
+            <ComboBoxItem x:Name="s03" Content="03"/>
+            <ComboBoxItem x:Name="s04" Content="04"/>
+            <ComboBoxItem x:Name="s05" Content="05"/>
+            <ComboBoxItem x:Name="s06" Content="06"/>
+            <ComboBoxItem x:Name="s07" Content="07"/>
+            <ComboBoxItem x:Name="s08" Content="08"/>
+            <ComboBoxItem x:Name="s09" Content="09"/>
+            <ComboBoxItem x:Name="s10" Content="10"/>
+            <ComboBoxItem x:Name="s11" Content="11"/>
+            <ComboBoxItem x:Name="s12" Content="12"/>
+            <ComboBoxItem x:Name="s13" Content="13"/>
+            <ComboBoxItem x:Name="s14" Content="14"/>
+            <ComboBoxItem x:Name="s15" Content="15"/>
+            <ComboBoxItem x:Name="s16" Content="16"/>
+            <ComboBoxItem x:Name="s17" Content="17"/>
+            <ComboBoxItem x:Name="s18" Content="18"/>
+            <ComboBoxItem x:Name="s19" Content="19"/>
+            <ComboBoxItem x:Name="s20" Content="20"/>
+            <ComboBoxItem x:Name="s21" Content="21"/>
+            <ComboBoxItem x:Name="s22" Content="22"/>
+            <ComboBoxItem x:Name="s23" Content="23"/>
+            <ComboBoxItem x:Name="s24" Content="24"/>
+            <ComboBoxItem x:Name="s25" Content="25"/>
+            <ComboBoxItem x:Name="s26" Content="26"/>
+            <ComboBoxItem x:Name="s27" Content="27"/>
+            <ComboBoxItem x:Name="s28" Content="28"/>
+            <ComboBoxItem x:Name="s29" Content="29"/>
+            <ComboBoxItem x:Name="s30" Content="30"/>
+            <ComboBoxItem x:Name="s31" Content="31"/>
+            <ComboBoxItem x:Name="s32" Content="32"/>
+            <ComboBoxItem x:Name="s33" Content="33"/>
+            <ComboBoxItem x:Name="s34" Content="34"/>
+            <ComboBoxItem x:Name="s35" Content="35"/>
+            <ComboBoxItem x:Name="s36" Content="36"/>
+            <ComboBoxItem x:Name="s37" Content="37"/>
+            <ComboBoxItem x:Name="s38" Content="38"/>
+            <ComboBoxItem x:Name="s39" Content="39"/>
+            <ComboBoxItem x:Name="s40" Content="40"/>
+            <ComboBoxItem x:Name="s41" Content="41"/>
+            <ComboBoxItem x:Name="s42" Content="42"/>
+            <ComboBoxItem x:Name="s43" Content="43"/>
+            <ComboBoxItem x:Name="s44" Content="44"/>
+            <ComboBoxItem x:Name="s45" Content="45"/>
+            <ComboBoxItem x:Name="s46" Content="46"/>
+            <ComboBoxItem x:Name="s47" Content="47"/>
+            <ComboBoxItem x:Name="s48" Content="48"/>
+            <ComboBoxItem x:Name="s49" Content="49"/>
+            <ComboBoxItem x:Name="s50" Content="50"/>
+            <ComboBoxItem x:Name="s51" Content="51"/>
+            <ComboBoxItem x:Name="s52" Content="52"/>
+            <ComboBoxItem x:Name="s53" Content="53"/>
+            <ComboBoxItem x:Name="s54" Content="54"/>
+            <ComboBoxItem x:Name="s55" Content="55"/>
+            <ComboBoxItem x:Name="s56" Content="56"/>
+            <ComboBoxItem x:Name="s57" Content="57"/>
+            <ComboBoxItem x:Name="s58" Content="58"/>
+            <ComboBoxItem x:Name="s59" Content="59"/>
+        </ComboBox>
+
+        <ComboBox x:Name="Horas" Margin="371,0,0,14.8" Grid.RowSpan="3" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="40" >
+            <ComboBoxItem x:Name="h00" Content="00"/>
+            <ComboBoxItem x:Name="h01" Content="01"/>
+            <ComboBoxItem x:Name="h02" Content="02"/>
+            <ComboBoxItem x:Name="h03" Content="03"/>
+            <ComboBoxItem x:Name="h04" Content="04"/>
+            <ComboBoxItem x:Name="h05" Content="05"/>
+            <ComboBoxItem x:Name="h06" Content="06"/>
+            <ComboBoxItem x:Name="h07" Content="07"/>
+            <ComboBoxItem x:Name="h08" Content="08"/>
+            <ComboBoxItem x:Name="h09" Content="09"/>
+            <ComboBoxItem x:Name="h10" Content="10"/>
+            <ComboBoxItem x:Name="h11" Content="11"/>
+            <ComboBoxItem x:Name="h12" Content="12"/>
+            <ComboBoxItem x:Name="h13" Content="13"/>
+            <ComboBoxItem x:Name="h14" Content="14"/>
+            <ComboBoxItem x:Name="h15" Content="15"/>
+            <ComboBoxItem x:Name="h16" Content="16"/>
+            <ComboBoxItem x:Name="h17" Content="17"/>
+            <ComboBoxItem x:Name="h18" Content="18"/>
+            <ComboBoxItem x:Name="h19" Content="19"/>
+            <ComboBoxItem x:Name="h20" Content="20"/>
+            <ComboBoxItem x:Name="h21" Content="21"/>
+            <ComboBoxItem x:Name="h22" Content="22"/>
+            <ComboBoxItem x:Name="h23" Content="23"/>
+
+        </ComboBox>
+        <ComboBox x:Name="Minutos" HorizontalAlignment="Left" Margin="416,0,0,14.8" Width="40" Grid.RowSpan="3" Height="22" VerticalAlignment="Bottom">
+            <ComboBoxItem x:Name="m00" Content="00"/>
+            <ComboBoxItem x:Name="m01" Content="01"/>
+            <ComboBoxItem x:Name="m02" Content="02"/>
+            <ComboBoxItem x:Name="m03" Content="03"/>
+            <ComboBoxItem x:Name="m04" Content="04"/>
+            <ComboBoxItem x:Name="m05" Content="05"/>
+            <ComboBoxItem x:Name="m06" Content="06"/>
+            <ComboBoxItem x:Name="m07" Content="07"/>
+            <ComboBoxItem x:Name="m08" Content="08"/>
+            <ComboBoxItem x:Name="m09" Content="09"/>
+            <ComboBoxItem x:Name="m10" Content="10"/>
+            <ComboBoxItem x:Name="m11" Content="11"/>
+            <ComboBoxItem x:Name="m12" Content="12"/>
+            <ComboBoxItem x:Name="m13" Content="13"/>
+            <ComboBoxItem x:Name="m14" Content="14"/>
+            <ComboBoxItem x:Name="m15" Content="15"/>
+            <ComboBoxItem x:Name="m16" Content="16"/>
+            <ComboBoxItem x:Name="m17" Content="17"/>
+            <ComboBoxItem x:Name="m18" Content="18"/>
+            <ComboBoxItem x:Name="m19" Content="19"/>
+            <ComboBoxItem x:Name="m20" Content="20"/>
+            <ComboBoxItem x:Name="m21" Content="21"/>
+            <ComboBoxItem x:Name="m22" Content="22"/>
+            <ComboBoxItem x:Name="m23" Content="23"/>
+            <ComboBoxItem x:Name="m24" Content="24"/>
+            <ComboBoxItem x:Name="m25" Content="25"/>
+            <ComboBoxItem x:Name="m26" Content="26"/>
+            <ComboBoxItem x:Name="m27" Content="27"/>
+            <ComboBoxItem x:Name="m28" Content="28"/>
+            <ComboBoxItem x:Name="m29" Content="29"/>
+            <ComboBoxItem x:Name="m30" Content="30"/>
+            <ComboBoxItem x:Name="m31" Content="31"/>
+            <ComboBoxItem x:Name="m32" Content="32"/>
+            <ComboBoxItem x:Name="m33" Content="33"/>
+            <ComboBoxItem x:Name="m34" Content="34"/>
+            <ComboBoxItem x:Name="m35" Content="35"/>
+            <ComboBoxItem x:Name="m36" Content="36"/>
+            <ComboBoxItem x:Name="m37" Content="37"/>
+            <ComboBoxItem x:Name="m38" Content="38"/>
+            <ComboBoxItem x:Name="m39" Content="39"/>
+            <ComboBoxItem x:Name="m40" Content="40"/>
+            <ComboBoxItem x:Name="m41" Content="41"/>
+            <ComboBoxItem x:Name="m42" Content="42"/>
+            <ComboBoxItem x:Name="m43" Content="43"/>
+            <ComboBoxItem x:Name="m44" Content="44"/>
+            <ComboBoxItem x:Name="m45" Content="45"/>
+            <ComboBoxItem x:Name="m46" Content="46"/>
+            <ComboBoxItem x:Name="m47" Content="47"/>
+            <ComboBoxItem x:Name="m48" Content="48"/>
+            <ComboBoxItem x:Name="m49" Content="49"/>
+            <ComboBoxItem x:Name="m50" Content="50"/>
+            <ComboBoxItem x:Name="m51" Content="51"/>
+            <ComboBoxItem x:Name="m52" Content="52"/>
+            <ComboBoxItem x:Name="m53" Content="53"/>
+            <ComboBoxItem x:Name="m54" Content="54"/>
+            <ComboBoxItem x:Name="m55" Content="55"/>
+            <ComboBoxItem x:Name="m56" Content="56"/>
+            <ComboBoxItem x:Name="m57" Content="57"/>
+            <ComboBoxItem x:Name="m58" Content="58"/>
+            <ComboBoxItem x:Name="m59" Content="59"/>
+        </ComboBox>
+
+        <Label x:Name="label" Content="SET ALARM" HorizontalAlignment="Left" Margin="400,251,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="1.365,0.507"/>
+        <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="22" Margin="373,254,0,0" VerticalAlignment="Top" Width="25" Source="Bell.ico" RenderTransformOrigin="-0.219,0.543"/>
+        <Label x:Name="RelojPais" Content="" HorizontalAlignment="Left" Margin="25,267,0,0" VerticalAlignment="Top" Width="157" FontSize="25" Grid.RowSpan="3"/>
+        <ComboBox x:Name="cb_pais" Margin="25,245,373.4,0" Height="22" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

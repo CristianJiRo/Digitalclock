@@ -1,0 +1,18 @@
+﻿<Window x:Class="Digitalclock.PaisAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Digitalclock"
+        mc:Ignorable="d"
+        Title="Añadir Pais" Height="185.047" Width="524.3" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="label" Content="Pais:" HorizontalAlignment="Left" Margin="20,32,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="label_Copy" Content="Diferencia Horaria." HorizontalAlignment="Left" Margin="298,32,0,0" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="tb_Name" HorizontalAlignment="Right" Height="23" Margin="0,60,297.6,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" />
+        <TextBox x:Name="tb_Horario" Height="23" Margin="298,63,19.6,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Cancelar" Margin="298,114,135.6,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="button1" Content="Añadir" Margin="413,114,19.6,0" VerticalAlignment="Top" Click="button1_Click"/>
+
+    </Grid>
+</Window>
